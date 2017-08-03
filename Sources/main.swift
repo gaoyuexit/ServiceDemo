@@ -9,8 +9,7 @@ let server = HTTPServer()
 // 注册您自己的路由和请求／响应句柄
 var routes = Routes()
 
-// 将路由注册到服务器上
-
+server.serverName = "120.92.117.234"
 // 监听8181端口
 server.serverPort = 8181
 
@@ -50,6 +49,7 @@ routes.add(method: .get, uri: "/login") { (request, response) in
     response.completed()
 }
 
+// 将路由注册到服务器上
 server.addRoutes(routes)
 
 
