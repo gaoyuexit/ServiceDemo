@@ -13,7 +13,7 @@ var routes = Routes()
 
 // 监听8181端口
 server.serverPort = 8181
-server.serverAddress = "120.92.117.234"
+
 // 404 响应过滤器
 struct Filter404: HTTPResponseFilter {
     
