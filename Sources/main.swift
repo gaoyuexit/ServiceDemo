@@ -10,7 +10,7 @@ let server = HTTPServer()
 var routes = Routes()
 
 // 监听端口
-server.serverPort = 8080
+server.serverPort = 443
 
 routes.add(method: .get, uri: "/login") { (request, response) in
     response.setHeader(.contentType, value: "text/html")
